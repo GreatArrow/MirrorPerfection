@@ -56,6 +56,10 @@ export function renderMainMenu() {
         };
         menu.appendChild(item);
     });
+
+    selected.onclick = () => {
+        menu.classList.toggle("open");
+    };
     
     activityDropdown.appendChild(selected);
     activityDropdown.appendChild(menu);

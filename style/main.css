@@ -8,6 +8,8 @@ body {
 
 .main-menu {
     width: 100%;
+    max-width: 500px;   /* ← choose your limit */
+    margin: 0 auto;     /* ← centers it */
     height: 100vh;
     display: flex;
     flex-direction: column;

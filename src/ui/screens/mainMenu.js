@@ -66,7 +66,7 @@ export function renderMainMenu() {
     
     const importBtn = document.createElement("button");
     importBtn.className = "menu-btn";
-    importBtn.textContent = "Import video (mp4, mov, mkv)";
+    importBtn.textContent = "Import video (.mp4, .mov, .mkv)";
 
     const startBtn = document.createElement("button");
     startBtn.className = "start-btn";

@@ -36,15 +36,29 @@ export function renderMainMenu() {
     const btnContainer = document.createElement("div");
     btnContainer.className = "button-stack";
 
-    const activityDropdown = document.createElement("select");
-    activityDropdown.className = "menu-btn activity-dropdown";
+    const activityDropdown = document.createElement("div");
+    activityDropdown.className = "custom-dropdown";
     
-    const defaultOption = document.createElement("option");
-    defaultOption.textContent = "Select an activity";
-    defaultOption.disabled = true;
-    defaultOption.selected = true;
+    const selected = document.createElement("div");
+    selected.className = "dropdown-selected";
+    selected.textContent = "Select an activity";
     
-    activityDropdown.appendChild(defaultOption);
+    const menu = document.createElement("div");
+    menu.className = "dropdown-menu";
+    
+    ["Sprint", "Pushup"].forEach(name => {
+        const item = document.createElement("div");
+        item.className = "dropdown-item";
+        item.textContent = name;
+        item.onclick = () => {
+            selected.textContent = name;
+            menu.classList.remove("open");
+        };
+        menu.appendChild(item);
+    });
+    
+    activityDropdown.appendChild(selected);
+    activityDropdown.appendChild(menu);
     
     ["Sprint", "Pushup"].forEach(name => {
         const opt = document.createElement("option");

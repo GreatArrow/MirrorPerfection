@@ -98,27 +98,43 @@ body {
 }
 
 /* Make the dropdown look like your menu buttons */
-.menu-btn.activity-dropdown {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+.custom-dropdown {
+    width: 100%;
+    position: relative;
+}
 
+.dropdown-selected {
     width: 100%;
     padding: 15px;
     background: #2e2e2e;
     border: 1px solid #555;
     color: white;
     font-size: 16px;
-    cursor: pointer;
-
-    /* The centering hack */
-    direction: rtl;
     text-align: center;
-
-    background-image: none;
+    cursor: pointer;
 }
 
-.activity-dropdown option {
-    direction: ltr;
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #2e2e2e;
+    border: 1px solid #555;
+    z-index: 10;
+}
+
+.dropdown-menu.open {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 12px;
     text-align: center;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background: #3a3a3a;
 }

@@ -114,9 +114,6 @@ body {
     text-align: center;
     position: relative;
 
-    /* Add space for the arrow */
-    padding-right: 40px;
-
     /* Custom arrow */
     background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='14' width='14' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'><polygon points='0,0 20,0 10,10'/></svg>");
     background-repeat: no-repeat;

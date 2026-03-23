@@ -110,7 +110,7 @@ body {
     color: white;
     font-size: 16px;
     cursor: pointer;
-    text-align: center;
+    text-align-last: center;
 
     background-image: none;
 }

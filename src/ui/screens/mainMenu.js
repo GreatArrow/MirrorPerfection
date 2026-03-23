@@ -36,39 +36,24 @@ export function renderMainMenu() {
     const btnContainer = document.createElement("div");
     btnContainer.className = "button-stack";
 
-    // Activity selector
-    const activityWrapper = document.createElement("div");
-    activityWrapper.className = "activity-selector";
+    const activityDropdown = document.createElement("select");
+    activityDropdown.className = "activity-dropdown";
     
-    const activityBtn = document.createElement("button");
-    activityBtn.className = "menu-btn";
-    activityBtn.textContent = "Select an activity";
+    const defaultOption = document.createElement("option");
+    defaultOption.textContent = "Select an activity";
+    defaultOption.disabled = true;
+    defaultOption.selected = true;
     
-    const activityList = document.createElement("div");
-    activityList.className = "activity-list hidden";
+    activityDropdown.appendChild(defaultOption);
     
-    // Example activities — replace with your real ones
-    ["Choose an activity.", "Sprints"].forEach(name => {
-        const item = document.createElement("div");
-        item.className = "activity-item";
-        item.textContent = name;
-        activityList.appendChild(item);
+    ["Sprints", "Yoga", "Strength"].forEach(name => {
+        const opt = document.createElement("option");
+        opt.value = name.toLowerCase();
+        opt.textContent = name;
+        activityDropdown.appendChild(opt);
     });
     
-    activityWrapper.appendChild(activityBtn);
-    activityWrapper.appendChild(activityList);
-
-    // Activity selector interactions
-activityBtn.addEventListener("click", () => {
-    activityList.classList.toggle("hidden");
-});
-
-activityList.addEventListener("click", e => {
-    if (e.target.classList.contains("activity-item")) {
-        activityBtn.textContent = e.target.textContent;
-        activityList.classList.add("hidden");
-    }
-});
+    btnContainer.appendChild(activityDropdown);
     
     const importBtn = document.createElement("button");
     importBtn.className = "menu-btn";

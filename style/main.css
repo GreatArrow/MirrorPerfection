@@ -113,10 +113,4 @@ body {
 
     text-align: center;
     position: relative;
-
-    /* Custom arrow */
-    background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='14' width='14' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'><polygon points='0,0 20,0 10,10'/></svg>");
-    background-repeat: no-repeat;
-    background-position: right 12px center;
-    background-size: 14px;
 }

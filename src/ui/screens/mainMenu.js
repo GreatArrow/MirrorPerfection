@@ -55,7 +55,12 @@ export function renderMainMenu() {
     // Notes bar
     const notesBar = document.createElement("div");
     notesBar.className = "notes-bar";
-    notesBar.innerHTML = `NOTES <span class="arrow">↑</span>`;
+    
+    const handle = document.createElement("div");
+    handle.className = "notes-handle"; // you style this yourself
+    
+    notesBar.appendChild(handle);
+
 
     // Assemble
     container.appendChild(topBar);

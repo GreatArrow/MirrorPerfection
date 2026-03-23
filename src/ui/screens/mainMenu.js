@@ -37,7 +37,7 @@ export function renderMainMenu() {
     btnContainer.className = "button-stack";
 
     const activityDropdown = document.createElement("select");
-    activityDropdown.className = "menu-btn activity-dropdown";
+    activityDropdown.className = "menu-btn";
     
     const defaultOption = document.createElement("option");
     defaultOption.textContent = "Select an activity";

@@ -111,9 +111,14 @@ body {
     font-size: 16px;
     cursor: pointer;
 
+    /* The centering hack */
+    direction: rtl;
+    text-align: center;
+
     background-image: none;
 }
 
 .activity-dropdown option {
+    direction: ltr;
     text-align: center;
 }

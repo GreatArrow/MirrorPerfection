@@ -36,10 +36,44 @@ export function renderMainMenu() {
     const btnContainer = document.createElement("div");
     btnContainer.className = "button-stack";
 
+    // Activity selector
+    const activityWrapper = document.createElement("div");
+    activityWrapper.className = "activity-selector";
+    
     const activityBtn = document.createElement("button");
     activityBtn.className = "menu-btn";
-    activityBtn.textContent = "Select an activity.";
+    activityBtn.textContent = "Select an activity";
+    
+    const activityList = document.createElement("div");
+    activityList.className = "activity-list hidden";
+    
+    // Example activities — replace with your real ones
+    ["Choose an activity.", "Sprints"].forEach(name => {
+        const item = document.createElement("div");
+        item.className = "activity-item";
+        item.textContent = name;
+        activityList.appendChild(item);
+    });
+    
+    activityWrapper.appendChild(activityBtn);
+    activityWrapper.appendChild(activityList);
+    
+    // Add to button stack
+    btnContainer.appendChild(activityWrapper);
 
+
+    // Activity selector interactions
+activityBtn.addEventListener("click", () => {
+    activityList.classList.toggle("hidden");
+});
+
+activityList.addEventListener("click", e => {
+    if (e.target.classList.contains("activity-item")) {
+        activityBtn.textContent = e.target.textContent;
+        activityList.classList.add("hidden");
+    }
+});
+    
     const importBtn = document.createElement("button");
     importBtn.className = "menu-btn";
     importBtn.textContent = "Import video (mp4, mov, mkv)";

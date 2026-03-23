@@ -1,6 +1,9 @@
 // src/ui/screens/mainMenu.js
 
 export function renderMainMenu() {
+    console.log("mainMenu loaded");
+
+export function renderMainMenu() {
     const app = document.getElementById("app");
     app.innerHTML = "";
 

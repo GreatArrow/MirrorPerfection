@@ -102,4 +102,12 @@ body {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
+
+    width: 100%;
+    padding: 15px;
+    background: #2e2e2e;
+    border: 1px solid #555;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
 }

@@ -46,7 +46,7 @@ export function renderMainMenu() {
     
     activityDropdown.appendChild(defaultOption);
     
-    ["Sprints", "Yoga", "Strength"].forEach(name => {
+    ["Sprint", "Pushup"].forEach(name => {
         const opt = document.createElement("option");
         opt.value = name.toLowerCase();
         opt.textContent = name;

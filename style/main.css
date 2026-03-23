@@ -138,12 +138,3 @@ body {
 .dropdown-item:hover {
     background: #3a3a3a;
 }
-
-.custom-dropdown,
-.dropdown-selected,
-.dropdown-menu,
-.dropdown-item,
-.start-btn,
-.menu-btn {
-    box-sizing: border-box;
-}

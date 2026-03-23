@@ -53,8 +53,6 @@ export function renderMainMenu() {
         activityDropdown.appendChild(opt);
     });
     
-    btnContainer.appendChild(activityDropdown);
-    
     const importBtn = document.createElement("button");
     importBtn.className = "menu-btn";
     importBtn.textContent = "Import video (mp4, mov, mkv)";
@@ -63,7 +61,7 @@ export function renderMainMenu() {
     startBtn.className = "start-btn";
     startBtn.textContent = "START";
 
-    btnContainer.appendChild(activityWrapper);    
+    btnContainer.appendChild(activityDropdown);
     btnContainer.appendChild(importBtn);
     btnContainer.appendChild(startBtn);
 

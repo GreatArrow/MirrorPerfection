@@ -98,7 +98,7 @@ body {
 }
 
 /* Make the dropdown look like your menu buttons */
-.activity-dropdown {
+.menu-btn.activity-dropdown {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;

@@ -96,3 +96,30 @@ body {
     margin-left: 10px;
     font-size: 20px;
 }
+
+/* Make the dropdown look like your menu buttons */
+.menu-btn.activity-dropdown {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    width: 100%;
+    cursor: pointer;
+
+    /* Inherit your button styling */
+    background: var(--menu-btn-bg, #222);
+    color: var(--menu-btn-text, #fff);
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    font-size: 18px;
+
+    /* Add space for the arrow */
+    padding-right: 40px;
+
+    /* Custom arrow */
+    background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='14' width='14' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'><polygon points='0,0 20,0 10,10'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 14px;
+}

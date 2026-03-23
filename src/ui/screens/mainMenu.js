@@ -64,13 +64,6 @@ export function renderMainMenu() {
     activityDropdown.appendChild(selected);
     activityDropdown.appendChild(menu);
     
-    ["Sprint", "Pushup"].forEach(name => {
-        const opt = document.createElement("option");
-        opt.value = name.toLowerCase();
-        opt.textContent = name;
-        activityDropdown.appendChild(opt);
-    });
-    
     const importBtn = document.createElement("button");
     importBtn.className = "menu-btn";
     importBtn.textContent = "Import video (mp4, mov, mkv)";

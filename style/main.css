@@ -110,7 +110,10 @@ body {
     color: white;
     font-size: 16px;
     cursor: pointer;
-    text-align-last: center;
 
     background-image: none;
+}
+
+.activity-dropdown option {
+    text-align: center;
 }

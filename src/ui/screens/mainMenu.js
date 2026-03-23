@@ -57,10 +57,6 @@ export function renderMainMenu() {
     
     activityWrapper.appendChild(activityBtn);
     activityWrapper.appendChild(activityList);
-    
-    // Add to button stack
-    btnContainer.appendChild(activityWrapper);
-
 
     // Activity selector interactions
 activityBtn.addEventListener("click", () => {
@@ -82,7 +78,7 @@ activityList.addEventListener("click", e => {
     startBtn.className = "start-btn";
     startBtn.textContent = "START";
 
-    btnContainer.appendChild(activityBtn);
+    btnContainer.appendChild(activityWrapper);    
     btnContainer.appendChild(importBtn);
     btnContainer.appendChild(startBtn);
 

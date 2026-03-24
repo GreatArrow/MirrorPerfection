@@ -1,0 +1,1 @@
+{"name": "MirrorPerfection", "version": "1.0.0", "description": "A project utilizing MediaPipe and Three.js for 3D rendering.", "main": "index.js", "scripts": {"test": "echo 'Error: no test specified' && exit 1"}, "dependencies": {"@mediapipe/face_mesh": "^0.5.0", "three": "^0.139.3"}}
